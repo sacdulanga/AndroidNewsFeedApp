@@ -29,7 +29,7 @@ open `Android Studio => File => New => Import Project`.
 	They all use the same syntax; all of these resources could be defined in one
 	file, but we generally split them apart as shown here to keep things organized.
 
-## Suport Android versiona
+## Suport Android version
 * `Android 5.0 (API level 21) and above`
 
 ## Tested Android versions
@@ -40,3 +40,6 @@ open `Android Studio => File => New => Import Project`.
 * `Android 8.0 (API level 27) Oreo	`
 * `Android 9.0 (API level 28) Pie`
 * `Android 10.0 (API level 29) Q`
+
+## Screen shots
+❮img src="screenshots/Screenshot_1572777346.png" width="400" ❯
