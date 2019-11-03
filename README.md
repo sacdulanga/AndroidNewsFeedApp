@@ -42,4 +42,8 @@ open `Android Studio => File => New => Import Project`.
 * `Android 10.0 (API level 29) Q`
 
 ## Screen shots
-❮img src="screenshots/Screenshot_1572777346.png" width="400" ❯
+<img src="screenshots/Screenshot_1572777346.png" width="400">
+<img src="screenshots/Screenshot_1572777358.png" width="400">
+<img src="screenshots/Screenshot_1572777372.png" width="400">
+<img src="screenshots/Screenshot_1572777385.png" width="400">
+<img src="screenshots/Screenshot_1572777377.png" width="400">
