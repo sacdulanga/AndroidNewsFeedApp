@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007aff</color>
+    <color name="colorPrimaryDark">#002d56</color>
+    <color name="colorAccent">#155B9A</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lightGray">#e5e5ea</color>
+    <color name="gray">#454856</color>
+    <color name="light_blue">#e0eefe</color>
+
+    <color name="blue">#4169E1</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="red">#FF3B30</color>
+    <color name="green">#4CD964</color>
+
+    <color name="transparent_blu">#AA002d56</color>
+    <color name="toggle_btn_color">#4cd964</color>
+    <color name="exchange_color">#002d56</color>
+    <color name="singup_bottom_color">#403C6FFE</color>
+    <color name="text_light_blue">#97acc3</color>
+
+    <color name="light_ash">#cccccc</color>
+    <color name="ash">#828282</color>
+    <color name="transparent_ash">#CCffffff</color>
+    <color name="ash_light">#99828282</color>
+    <color name="grey">#454545</color>
+    <color name="black">#000000</color>
+
+    <color name="background">#E5E5E5</color>
+
+    <!-- Text colors -->
+    <color name="default_text_color">#FFFFFF</color>
+    <color name="edit_text_color">#FFFFFF</color>
+    <color name="edit_text_hint_color">#FFFFFF</color>
+    <color name="actionbar_title_text_color">#3acce1</color>
+    <color name="transparent_white">#88FFFFFF</color>
+
+    <!-- Sign up background -->
+    <color name="bg_color_login">#3acce1</color>
+    <color name="bg_color_edit_text">#CC143074</color>
+    <color name="bg_color_edit_text_boarder">#11abc7</color>
+    <color name="bg_color_login_button_gradient_start">#2743a0</color>
+    <color name="bg_color_login_button_gradient_end">#11abc7</color>
+
+    <color name="error_msg_color">#ff2e50</color>
+
+</resources>
