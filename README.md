@@ -3,11 +3,8 @@ Android(Kotlin) News Feed application
 
 [![Build Status](https://travis-ci.org/mvdan/android-template.svg?branch=master)](https://travis-ci.org/mvdan/android-template)
 
-Minimalist Android app template using Gradle.
-
-This Repositary contains the full implementation of a basic application for
-the Android platform( `Kotlin`), demonstrating the basic facilities that applications
-will use.  You can run the application using Android studio either directly 
+This Repositary contains the implementation of the News Feed application for
+the Android platform using `Kotlin`,You can run the application using Android studio either directly 
 open `(File/open)` the application using Android Studio or import the application
 using Android Studio like below. 
 open `Android Studio => File => New => Import Project`.
