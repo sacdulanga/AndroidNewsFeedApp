@@ -8,9 +8,9 @@ Minimalist Android app template using Gradle.
 This Repositary contains the full implementation of a basic application for
 the Android platform( `Kotlin`), demonstrating the basic facilities that applications
 will use.  You can run the application using Android studio either directly 
-open (File/open) the application using Android Studio or import the application
+open `(File/open)` the application using Android Studio or import the application
 using Android Studio like below. 
-open Android Studio => File => New => Import Project.
+open `Android Studio => File => New => Import Project`.
 
 ## Structure
 
@@ -32,4 +32,14 @@ open Android Studio => File => New => Import Project.
 	They all use the same syntax; all of these resources could be defined in one
 	file, but we generally split them apart as shown here to keep things organized.
 
+## Suport Android versiona
+* `Android 5.0 (API level 21) and above`
 
+## Tested Android versions
+
+* `Android 5.1 (API level 21) Lollipop `
+* `Android 6.0 (API level 23) Marshmallow`
+* `Android 7.0 (API level 25) Nougat`
+* `Android 8.0 (API level 27) Oreo	`
+* `Android 9.0 (API level 28) Pie`
+* `Android 10.0 (API level 29) Q`
