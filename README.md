@@ -9,7 +9,7 @@ open `(File/open)` the application using Android Studio or import the applicatio
 using Android Studio like below. 
 open `Android Studio => File => New => Import Project`.
 
-## Struc
+## Structure
 
 * `build.gradle` - root gradle config file
 * `settings.gradle` - root gradle settings file
