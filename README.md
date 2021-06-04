@@ -1,4 +1,4 @@
-# Android News Feed App
+# Android News Feed Application
 Android(Kotlin) News Feed application 
 
 [![Build Status](https://travis-ci.org/mvdan/android-template.svg?branch=master)](https://travis-ci.org/mvdan/android-template)
