@@ -1,4 +1,4 @@
-# Android News Feed Application
+# Android News Feed App
 Android(Kotlin) News Feed application 
 
 [![Build Status](https://travis-ci.org/mvdan/android-template.svg?branch=master)](https://travis-ci.org/mvdan/android-template)
@@ -9,7 +9,7 @@ open `(File/open)` the application using Android Studio or import the applicatio
 using Android Studio like below. 
 open `Android Studio => File => New => Import Project`.
 
-## Structure *********
+## Structure
 
 * `build.gradle` - root gradle config file
 * `settings.gradle` - root gradle settings file
