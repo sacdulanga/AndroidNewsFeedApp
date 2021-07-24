@@ -21,6 +21,7 @@ import com.sac.dulanga.newsapp.comman.ApplicationConstants
 import com.sac.dulanga.newsapp.comman.CommonUtils
 import com.sac.dulanga.newsapp.comman.DomainConstants
 import com.sac.dulanga.newsapp.dto.NewsArticle
+import com.sac.dulanga.newsapp.model.entities.AuthRequest
 import com.sac.dulanga.newsapp.model.rest.ApiWorker
 import com.sac.dulanga.newsapp.ui.activities.MainActivity
 import com.sac.dulanga.newsapp.ui.adapters.NewsArticleAdapter
@@ -66,11 +67,13 @@ class NewsFeedFragment: Fragment() {
             setUpToolBar()
 
             setupRecycler(arrayListOf<NewsArticle>())
-            showArticles()
+//            showArticles()
+            showSasiruAPI()
+
 
             swipeRefreshLayout.setOnRefreshListener {
                 newsArticleAdapter!!.updateData(arrayListOf<NewsArticle>(), 1)
-                showArticles()
+//                showArticles()
             }
 
             //** Set the colors of the Pull To Refresh View
@@ -174,5 +177,40 @@ class NewsFeedFragment: Fragment() {
     override fun onDestroyView() {
         CommonUtils.hideLoading()
         super.onDestroyView()
+    }
+
+    private fun showSasiruAPI() {
+
+        if (CommonUtils.isConnectedToInternet(requireActivity())) {
+            CommonUtils.showLoading(requireActivity())
+            var authRequest : AuthRequest  = AuthRequest(
+                    "tybandara@123",
+                    "1",
+                    "1",
+                    "2",
+                    "0610ee39-edbc-4044-8df6-112f40dfcd22",
+                    "RB6OrqMCP8IiP0Exf6Js" )
+
+            disposable = client.postSampleAPI(DomainConstants.API_AUTHORIZATION_KEY_SASIRU, authRequest)
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(
+                            { result ->
+                                CommonUtils.hideLoading()
+                                CommonUtils.showLongToast(requireActivity(), result.request_id)
+                            },
+                            { error ->
+                                CommonUtils.hideLoading()
+                                CommonUtils.showLongToast(requireActivity(), error.message.toString())
+                                Log.e("ERROR", error.message)
+                            }
+                    )
+        } else {
+            toggleView(true)
+            CommonUtils.hideLoading()
+            CommonUtils.showTopSnackBar(ApplicationConstants.NETWORK_ERROR, ContextCompat.getColor(requireContext(), R.color.red), requireActivity())
+        }
+
+
     }
 }

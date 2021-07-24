@@ -16,4 +16,8 @@ object DomainConstants {
     /** ----------------------------- live ----------------------------- */
 //    const val SERVER_URL = ""
 
+    const val SERVER_URL_SASIRU = ""
+
+    const val API_AUTHORIZATION_KEY_SASIRU = ""
+
 }

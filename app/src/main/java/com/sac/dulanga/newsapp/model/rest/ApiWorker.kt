@@ -24,7 +24,7 @@ object ApiWorker {
     fun create(): ArticlesApiClient {
 
         val retrofit = Retrofit.Builder()
-                .baseUrl(DomainConstants.SERVER_URL)
+                .baseUrl(DomainConstants.SERVER_URL_SASIRU)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(gSonConverter)
                 .client(client)
